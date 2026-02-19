@@ -28,6 +28,13 @@ String nullableName2 = "Aditya"; // Now nullableName holds a non-null String val
 // Top-level and class variables are lazily initialized; the initialization code runs the first time the variable is used. Local variables are not lazily initialized; they are initialized when the function is called.
 // top level variables are variables that are declared outside of any class or function and are accessible throughout the entire program. They are initialized when the program starts and remain in memory until the program ends. Class variables, also known as static variables, are variables that are declared within a class and are shared among all instances of that class. They are initialized when the class is first loaded and remain in memory until the program ends. Local variables, on the other hand, are variables that are declared within a function or method and are only accessible within that function or method. They are initialized when the function is called and are destroyed when the function exits.
 
+
+//late keyword is used for the lazy initialization of variables. It allows you to declare a variable without initializing it immediately, and the variable will be initialized when it is first accessed. This can be useful when you have a variable that is expensive to initialize or when you want to delay the initialization until it is actually needed. For example:
+late String name5; // The variable name5 is declared but not initialized
+// The variable name5 will be initialized when it is first accessed
+name5 = "Aditya"; // Now name5 holds the value "Aditya"
+
+
 var age = 25; // int
 var height = 5.9; // double
 var isStudent = true; // bool
